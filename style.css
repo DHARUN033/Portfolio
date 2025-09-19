@@ -67,10 +67,22 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  font-family: 'Azonix', sans-serif;
+  transition: color 0.3s ease;
+  font-display: swap;
 }
-
+/* Hover animation */
 .logo:hover {
   cursor: default;
+    animation: colorChange 3s infinite;
+}
+/* Keyframes with your chosen colors */
+@keyframes colorChange {
+  0%   { color: #ff0000; }   
+  25%  { color: #00ff00; }   
+  50%  { color: #0000ff; }   
+  75%  { color: #ff00ff; }   
+  100% { color: #ff0000; }   
 }
 
 /* HAMBURGER MENU */
